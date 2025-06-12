@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#todoInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#todoInput:focus {
+    border-color: #4CAF50;
+}
+
+#addTodoBtn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#addTodoBtn:hover {
+    background-color: #45a049;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+#todoList li.completed {
+    background-color: #e0ffe0;
+    color: #888;
+}
+
+#todoList li.completed span {
+    text-decoration: line-through;
+}
+
+#todoList li input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50; /* 체크박스 색상 변경 */
+    cursor: pointer;
+}
+
+#todoList li span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 17px;
+}
+
+#todoList li .delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+}
+
+#todoList li .delete-btn:hover {
+    background-color: #da190b;
+}
+
+.clear-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.clear-btn:hover {
+    background-color: #007bb5;
+}
+
+#clearCompletedBtn {
+    background-color: #FFC107; /* 주황색 계열 */
+}
+
+#clearCompletedBtn:hover {
+    background-color: #e0a800;
+}
